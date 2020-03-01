@@ -1,0 +1,20 @@
+# Blender Cheat sheet
+
+## Navigation
+---
+Collection - m
+Apply Rotate/Transform - Ctrl-A
+Pan - Shift + MMB
+Duplicate - Shift + d then enter
+Scale s then x,y,z
+Tab - Edit mode
+3 - Facemode
+
+
+##  Subtracting/Cutting- shapes from another
+---
+
+Click wrench on right side
+Click add modifier
+Select boolean modifier
+make sure "difference" is selected
