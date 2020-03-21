@@ -13,7 +13,7 @@
     * Solid
     * Wirefram
     * Rendered
-
+* Quad view - CTRL+ALT+Q
 
 
 ## Common Commands:
