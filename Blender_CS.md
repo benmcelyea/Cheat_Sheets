@@ -13,7 +13,9 @@
     * Solid
     * Wirefram
     * Rendered
-* Quad view - CTRL+ALT+Q
+* Shift-c Center cursor on grid
+* Cursor to selected  Shift-s then select cursor to selected.
+
 
 
 ## Common Commands:
@@ -35,6 +37,14 @@
     * In object mode click internal object menu
     * Select shade smooth
     * Another option is to right click and select shade smooth
+    * Select the object data panel (Looks like a triangle)
+      * Go to normals section
+      * Turn on autosmooth.
+  * Bevel
+    * Ctrl-b
+  * Add thickness
+    * Select modifiers panel
+    * Add solidify modifier
 
 
 ##  Subtracting/Cutting- shapes from another
