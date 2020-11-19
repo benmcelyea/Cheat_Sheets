@@ -1,4 +1,12 @@
-# Things I forget:
+# Javascript things I forget
 
-### Curly brackets (braces) in Node.js 'require' statement
+### What Curly brackets (braces) in Node.js 'require' statement do
 https://stackoverflow.com/questions/38660022/curly-brackets-braces-in-node-js-require-statement
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+
+## Electron
+
+# Node integration ? true : false
+https://stackoverflow.com/questions/52236641/electron-ipc-and-nodeintegration/57656281#57656281
+# CSP
+ <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
