@@ -12,8 +12,9 @@
     }
  ```
 ### Collisions:
-Add collider to all objects
-Add ridgidbody to necessary objects
+- Add collider to all objects
+- Add ridgidbody to necessary objects
+- Add script to all the objects
 
 ```
   private void OnTriggerEnter(Collider other)
