@@ -11,3 +11,14 @@
         Instantiate(animalPrefabs[animalIndex], spawnLocation, animalPrefabs[animalIndex].transform.rotation);
     }
  ```
+### Collisions:
+Add collider to all objects
+Add ridgidbody to necessary objects
+
+```
+  private void OnTriggerEnter(Collider other)
+    {
+        Destroy(this.gameObject);
+        Destroy(other);
+    }
+ ```
