@@ -1,7 +1,11 @@
 ### Spawn at timed intervals
 
-`InvokeRepeating("SpawnRandomAnimal", startDelay, spawnInterval);`
 ```
+  void Start()
+    {
+        InvokeRepeating("SpawnRandomAnimal", startDelay, spawnInterval);
+    }
+    
   void SpawnRandomAnimal()
     {
         int animalIndex = Random.Range(0, animalPrefabs.Length);
