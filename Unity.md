@@ -63,3 +63,49 @@ public class DestroyOutOfBounds : MonoBehaviour
     }
 }
 ```
+
+### Stop key spamming
+
+```
+public class PlayerControllerX : MonoBehaviour
+{
+    public GameObject dogPrefab;
+    private float timer = 0.0f;
+    private float coolDownTime = 1.0f;
+    private bool spaceBarCandBePressed = true;
+
+    // Update is called once per frame
+    private void Awake()
+    {
+        Time.timeScale = 1.0f;
+    }
+
+    void Update()
+    {
+
+
+        timer += Time.deltaTime;
+
+        //If its been `coolDownTime` since last time space bar was pressed
+        if (timer > coolDownTime)
+        {
+            spaceBarCandBePressed = true;
+            timer = timer - coolDownTime;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && spaceBarCandBePressed == true)
+        {
+            Instantiate(dogPrefab, transform.position, dogPrefab.transform.rotation);
+            spaceBarCandBePressed = false;
+        }
+
+
+
+
+
+
+
+
+    }
+}
+```
