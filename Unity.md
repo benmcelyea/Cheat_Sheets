@@ -30,7 +30,8 @@
  
 ### Movement:
 
-#### Move left:
+#### Non physics based movement
+##### Move left:
 ```
   transform.Translate(Vector3.left * Time.deltaTime * speed);
 ```
