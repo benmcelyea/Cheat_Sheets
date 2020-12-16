@@ -27,6 +27,13 @@
         Destroy(other);
     }
  ```
+ 
+### Movement:
+
+#### Move left:
+```
+  transform.Translate(Vector3.left * Time.deltaTime * speed);
+```
 
 ### Destroy off screen objects 
 
@@ -83,7 +90,6 @@ public class PlayerControllerX : MonoBehaviour
     void Update()
     {
 
-
         timer += Time.deltaTime;
 
         //If its been `coolDownTime` since last time space bar was pressed
@@ -98,13 +104,6 @@ public class PlayerControllerX : MonoBehaviour
             Instantiate(dogPrefab, transform.position, dogPrefab.transform.rotation);
             spaceBarCandBePressed = false;
         }
-
-
-
-
-
-
-
 
     }
 }
