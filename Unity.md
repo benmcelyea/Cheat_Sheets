@@ -36,6 +36,29 @@
   transform.Translate(Vector3.left * Time.deltaTime * speed);
 ```
 
+#### Physics based movement
+
+##### Add force to a rigidbody
+
+```
+ void Start()
+    {
+        playerRB = GetComponent<Rigidbody>();
+        Physics.gravity *= gravityModifier;
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
+        {
+            playerRB.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            isOnGround = false; 
+        }
+    }
+```
+
 ### Destroy off screen objects 
 
 ```using System.Collections;
