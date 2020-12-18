@@ -132,3 +132,14 @@ public class PlayerControllerX : MonoBehaviour
     }
 }
 ```
+
+#### Getting reference to a script on another object
+
+```
+ private PlayerController playerControllerScript;
+    // Start is called before the first frame update
+    void Start()
+    {
+        playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
+    }
+```
