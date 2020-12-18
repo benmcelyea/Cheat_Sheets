@@ -27,7 +27,22 @@
         Destroy(other);
     }
  ```
+ ##### Tagged collisions
+ ```
+   public void OnCollisionEnter(Collision collision)
+    {
+        
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isOnGround = true;
+        }else if (collision.gameObject.CompareTag("obstacle")){
+
+            gameOver = true;
+            Debug.Log("Game Over");
+        }
+    }
  
+ ```
 ### Movement:
 
 #### Non physics based movement
